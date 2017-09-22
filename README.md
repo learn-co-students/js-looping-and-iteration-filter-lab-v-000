@@ -1,4 +1,4 @@
-# JavaScript Filter Lab
+# Filter Lab
 
 ## Overview
 
@@ -10,7 +10,7 @@ This lab contains an array of drivers with various information. We need to write
 
 You'll be writing four functions:
 
- * `findMatching`- This function takes an array of `drivers` and a `string` as arguments, and returns the matching list of drivers. The function should be case insensitive.  
+ * `findMatching`- This function takes an array of `drivers` and a `string` as arguments, and returns the matching list of drivers. The function should be case insensitive.
  * `fuzzyMatch` - This function takes an array of `drivers` and a `string` as arguments for querying the array, and returns all drivers whose names begin with the provided letters.
  * `matchName` = This function takes an array of `drivers` and a `string` as argument. In this function, each element of the `drivers` array is a JavaScript object that has a property of `name`. The function should return each element whose `name` property matches the provided `string` argument.
 
@@ -18,4 +18,4 @@ You'll be writing four functions:
 
 - [MDN: Filter](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
 
-<p class='util--hide'>View <a href='https://learn.co/lessons/javascript-looping-and-iteration-filter-lab'>Javascript Filter Lab</a> on Learn.co and start learning to code for free.</p>
+<p class='util--hide'>View <a href='https://learn.co/lessons/js-looping-and-iteration-filter-lab'>Filter Lab</a> on Learn.co and start learning to code for free.</p>

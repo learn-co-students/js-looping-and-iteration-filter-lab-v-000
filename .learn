@@ -1,10 +1,9 @@
 tags:
-  - learn.co
-  - flatiron school
-  - javascript
-  - strings
-  - code-along
+  - filter
+  - arrays
+  - data structures
+  - lab
 languages:
   - javascript
 resources:
-  - 9
+  - 1
