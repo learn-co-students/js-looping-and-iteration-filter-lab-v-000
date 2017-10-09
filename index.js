@@ -11,7 +11,5 @@ var filteredNames = drivers.filter(function(driver) {
 }
 
 function matchName(drivers, name) {
-  debugger;
 return drivers.filter(function(driver) { if (driver.name === name) {return driver} })
-
 }
