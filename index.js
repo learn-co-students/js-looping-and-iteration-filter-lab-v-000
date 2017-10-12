@@ -4,9 +4,10 @@ const findMatching = (drivers, name) => {
   });
 }
 
-const fuzzyMatch = (drivers, name) => {
+const fuzzyMatch = (drivers, partial) => {
+
   return drivers.filter(function (driver) {
-    return driver[0].toUpperCase() === name[0].toUpperCase();
+    return driver.slice(0, partial.length) === partial;
   });
 }
 
