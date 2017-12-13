@@ -4,9 +4,11 @@ function findMatching (drivers, string) {
   })
 }
 
-function fuzzyMatch (drivers, string) {
-  return drivers.filter(function (letters) {
-    return letters[0] + letters[1] === string;
+function fuzzyMatch (drivers, letters) {
+  let lengthOfName = letters.length;
+
+  return drivers.filter(function (name) {
+    return name.slice(0, lengthOfName) === letters;
   })
 }
 
