@@ -1,23 +1,19 @@
 // Code your solution in this file
-function findMatching (list, name) {
+function findMatching (list, name){
+  return list.filter( word => word.toLowerCase() === name.toLowerCase())
+  }
 
-  return list.filter(function (driverName) {
-    return driverName.toLowerCase() === name.toLowerCase();
+
+function fuzzyMatch(list, name){
+  let length = name.length
+  return list.filter(function (driverName){
+    return driverName.slice(0, length) === name
+  }) 
+}
+
+function matchName(list, name){
+  return list.filter(function(driverName){
+    
+    return driverName.name === name
   })
 }
-
-function fuzzyMatch (list, partialName) {
-  let lengthOfName = partialName.length;
-  return list.filter(function (driverName) {
-    return driverName.slice(0, lengthOfName) === partialName;
-  });
-}
-
-function matchName(list, name) {
-
-  return list.filter(function (driver) {
-    return driver.name.toLowerCase() === name.toLowerCase()
-  })
-
-}
-
