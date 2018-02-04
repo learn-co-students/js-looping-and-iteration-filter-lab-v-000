@@ -27,6 +27,8 @@
   },
   "homepage": "https://github.com/learn-co-curriculum/js-looping-and-iteration-filter-lab#readme",
   "devDependencies": {
-    "learn-browser": "^0.1.13"
+    "chai": "^4.1.2",
+    "learn-browser": "^0.1.17",
+    "mocha": "^5.0.0"
   }
 }
