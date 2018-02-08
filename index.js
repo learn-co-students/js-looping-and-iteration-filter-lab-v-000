@@ -1,13 +1,5 @@
 // Code your solution in this file
 
-function driverName() {
-  const drivers = ['Bobby', 'Sammy', 'Sally', 'Annette', 'Sarah', 'Bobby']
-
-  for (const name of drivers) {
-    console.log(name)
-  }
-}
-
 function findMatching(drivers, name) {
   return drivers.filter(function(driverName) {
     return driverName.toLowerCase() === name.toLowerCase()
@@ -25,29 +17,6 @@ function fuzzyMatch(drivers, partialName) {
   })
 }
 
-function driver() {
-  const drivers = [
-    {
-      name: 'Bobby',
-      hometown: 'Pittsburgh' },
-    {
-      name: 'Sammy',
-      hometown: 'New York' } ,
-    {
-      name: 'Sally',
-      hometown: 'Cleveland' },
-    {
-      name: 'Annette',
-      hometown: 'Los Angeles' },
-    {
-      name: 'Bobby',
-      hometown: 'Tampa Bay' }
-  ];
-
-  for (const key in drivers) {
-    console.log(drivers[key])
-  }
-}
 
 function matchName(drivers, name) {
   return drivers.filter(function(driver) {
