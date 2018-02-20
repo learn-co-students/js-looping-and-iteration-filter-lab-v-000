@@ -6,7 +6,9 @@ function findMatching(drivers,string){
 }
 
 function fuzzyMatch(drivers,string){
+
   return drivers.filter(function (driver){return driver.substring(0,string.length) == string})
+
   //  return driver.charAt(0) == string.charAt(0) && driver.charAt(1) == string.charAt(1) })
 }
 
