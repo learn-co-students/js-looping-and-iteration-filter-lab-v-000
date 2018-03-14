@@ -10,6 +10,7 @@ function fuzzyMatch(drivers, name_beg) {
 }
 
 function matchName(drivers, driver_name) {
+  //this method is filtering through an array of objects, w/ name as a key on each object
   let matching = [];
   for (var obj in drivers) {
     if (drivers[obj].name.toLowerCase() === driver_name.toLowerCase()) {
@@ -18,3 +19,13 @@ function matchName(drivers, driver_name) {
   }
   return matching;
 }
+
+// Could also do: 
+// function matchName (list, name) {
+//   return list.filter(function (driver) {
+//     return driver.name.toLowerCase() === name.toLowerCase();
+//   });
+// }
+
+
+
