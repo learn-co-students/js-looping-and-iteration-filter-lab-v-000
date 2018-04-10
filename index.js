@@ -4,11 +4,11 @@ function findMatching (collection, name) {
 }
 
 function fuzzyMatch (collection, letters) {
-  const newCollection = collection.filter(function (user) { return user.substring(0, [letters.length]) === letters});
+  const newCollection = collection.filter(function (user) { return user.substring(0, [letters.length]) === letters });
   return newCollection;
 }
 
 function matchName (collection, name) {
-  const newCollection = collection.filter(function (user) { return user.name === name});
+  const newCollection = collection.filter(function (user) { return user.name === name });
   return newCollection;
 }
