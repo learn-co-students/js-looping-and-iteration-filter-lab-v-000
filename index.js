@@ -5,17 +5,10 @@ function findMatching(drivers, string){
 }
 
 function fuzzyMatch(drivers, string){
-  return drivers.filter(function (driver) { return driver.toLowerCase()[0] === string.toLowerCase()[0]; });
+  let lengthOfString = string.length;
+  return drivers.filter(function (driver) { return driver.slice(0,lengthOfString) === string; });
 }
 
 function matchName(drivers, string){
-  const matchedNames = [];
-
-  for (const key in drivers) {
-    if (drivers[key].name === string) {
-      matchedNames.push(drivers[key]);
-    }
-  }
-
-  return matchedNames;
+  return drivers.filter(function (driver) { return driver.name.toLowerCase() === string.toLowerCase(); });
 }
