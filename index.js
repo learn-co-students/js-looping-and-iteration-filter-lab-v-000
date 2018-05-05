@@ -1,7 +1,6 @@
 // Code your solution in this file
 function findMatching(arr, str){
-  const list = arr.filter(el => el.toLowerCase() === str.toLowerCase());
-  return list;
+  return arr.filter(el => el.toLowerCase() === str.toLowerCase());
 }
 
 function fuzzyMatch(arr, str){
