@@ -24,7 +24,8 @@ function matchName(array, name) {
 
 
 
-/*function findMatching(collection, name) {
+/*
+function findMatching(collection, name) {
   let result = [];
   for (const user of collection) {
     if (name.toLowerCase() === user.toLowerCase()) {
@@ -57,4 +58,5 @@ function matchName(array, driverName) {
     }
   }
   return result;
-}*/
+}
+*/
