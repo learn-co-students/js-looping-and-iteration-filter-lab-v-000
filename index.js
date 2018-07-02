@@ -12,17 +12,16 @@ function findMatching(drivers, name) {
 }
 
 //have to create a new variable that is used to slice off the right number of letters from the name stored in the list so that it can be compared to see if it matches
+function fuzzyMatch(drivers, letters) {
+  let lengthOfName = letters.length;    //can do this because a string is just an array of characters
+  return drivers.filter( function (searchLetters){
+    return searchLetters.slice(0, lengthOfName) === letters;
+  });
+}
 
 
-// function fuzzyMatch (list, letters) {
-//   let lengthOfName = letters.length;
-//   return list.filter(function (searchLetters){
-//     return searchLetters.slice(0, lengthOfName) === letters;
-//   });
-// }
-//
-// function matchName (list, name){
-//   return list.filter(function (driver){
-//     return driver.namea.toLowerCase() === name.toLowerCase();
-//   });
-// }
+function matchName(drivers, name) {
+  return drivers.filter(function (driver) {
+    return driver.name.toLowerCase() === name.toLowerCase();
+  });
+}
