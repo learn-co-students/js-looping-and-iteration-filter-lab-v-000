@@ -15,18 +15,14 @@ function findMatching(drivers, string) {
 function fuzzyMatch(drivers, partName) {
     const partNameLength = partName.length;
     return drivers.filter(function(driver) {
-        if (driver.slice(0, partNameLength) === partName) {
-            return driver
-        }
+        return driver.slice(0, partNameLength) === partName
     })
 }
 
 function matchName(drivers, matName) {
     return drivers.filter(function(driverObj) {
         for (const name in driverObj) {
-            if (matName === driverObj[name]) {
-                return matName
-            }
+            return matName === driverObj[name]
         }
     })
 }
