@@ -57,7 +57,11 @@ returns an `Array` means that you can apply `map` or `reduce` immediately
 after e.g.
 
 ```js
-students.filter( s => !!s.permissionSlip && s.isVegetarian).reduce( (orders, s) => orders.push(s.preferredMeal), [])
+students.filter( s => !!s.permissionSlip && s.isVegetarian)
+  .reduce( (orders, s) => orders.push(s.preferredMeal), [])`
+
+// => "What are the preferred meals for vegetarian students who are allowed to
+go on the field trip?"
 ```
 
 means you can write terse code that loses little expressivity.
