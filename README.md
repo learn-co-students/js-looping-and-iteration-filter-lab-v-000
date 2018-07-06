@@ -2,7 +2,7 @@
 
 ## Problem Statement
 
-The `filter` is one of the core iterator methods in JavaScript. It's a powerful
+The `filter` method is one of the core iterator methods in JavaScript. It's a powerful
 tool for reducing a set of data into a set of data _you want_.
 
 ## Objectives
