@@ -60,7 +60,7 @@ after e.g.
 students.filter( s => !!s.permissionSlip && s.isVegetarian).reduce( (orders, s) => orders.push(s.preferredMeal), [])`
 ```
 
-Means you can write terse code that loses little expressivity.
+means you can write terse code that loses little expressivity.
 
 ## Resources
 
