@@ -6,3 +6,8 @@ function findMatching(collection,name){
 function fuzzyMatch(drivers, string){
     return drivers.filter(driver => driver.slice(0,2).toUpperCase() === string.toUpperCase())
 }
+
+
+function matchName(collection,name){
+    return collection.filter(element => element.name.toUpperCase() === name.toUpperCase());
+}
