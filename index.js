@@ -7,7 +7,5 @@ function fuzzyMatch(drivers, name) {
 }
 
 function matchName(collection, name) {
-  // let driverList = collection.filter(function (driver) { return driver === name; });
-  // return driverList;
   return collection.filter(function (driver) { return driver.name === name; });
 }
