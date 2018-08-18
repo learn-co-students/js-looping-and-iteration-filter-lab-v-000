@@ -22,6 +22,10 @@ describe('index.js', function () {
     });
   });
 
+
+
+
+
   describe('fuzzyMatch()', function () {
     const drivers = [];
 
@@ -43,6 +47,10 @@ describe('index.js', function () {
       expect(fuzzyMatch(drivers, 'mm')).to.have.members([]);
     });
   });
+
+
+
+
 
   describe('matchName()', function () {
     it('accesses the data structure to check if name matches', function () {
