@@ -12,6 +12,6 @@ function fuzzyMatch(array, name) {
 }
 
 function matchName(array, driverName){
-newArray = array.filter(function(driverName) {return array.name == driverName;})
+newArray = array.filter(function(element) {return element.name == driverName;})
 return newArray
 }
