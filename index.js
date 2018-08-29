@@ -8,5 +8,5 @@ function fuzzyMatch(list, name) {
 }
 
 function matchName (list, name) {
-	return list.filter(function (string) {debugger; return string.name.toUpperCase() === name.toUpperCase(); });
+	return list.filter(function (string) {return string.name.toUpperCase() === name.toUpperCase(); });
 }
