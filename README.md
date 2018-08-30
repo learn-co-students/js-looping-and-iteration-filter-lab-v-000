@@ -20,15 +20,6 @@ query the data. Be sure to run the tests to get a feel for the types of
 problems this lab is asking you to solve _before_ you start writing JavaScript
 code.
 
-
-## Use `filter` to work with `String`s as well as `Object`s
-
-This lab contains an array of drivers with various information. We need to
-write methods using the `filter` method so that Scuber employees can easily
-query the data. Be sure to run the tests to get a feel for the types of
-problems this lab is asking you to solve _before_ you start writing JavaScript
-code.
-
 ## Write a Function To Case-insensitively Match `string`s
 
 Write `findMatching`- This function takes an array of `drivers` and a `string`
