@@ -9,7 +9,3 @@ function fuzzyMatch(drivers, string) {
 function matchName(drivers, string) {
     return drivers.filter(function (driver) { return driver.name.toUpperCase() === string.toUpperCase()})
 }
-
-// function matchName(list, name) {
-//     return list.filter(function (driver) {return driver.name.toLowerCase() === name.toLowerCase()})
-// }
