@@ -1,5 +1,5 @@
 function findMatching(drivers, string) {
-    return drivers.filter(function (name) {return name.toUpperCase() === string.toUpperCase()})
+    return drivers.filter(function (name) { return name.toUpperCase() === string.toUpperCase()})
 }
 
 function fuzzyMatch(drivers, string) {
