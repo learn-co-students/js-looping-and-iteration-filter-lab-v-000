@@ -1,11 +1,11 @@
-function findMatching(collection, string) {
-  return collection.filter(function (element) { return element.toLowerCase() === string.toLowerCase(); })
+function findMatching(collection, name) {
+	return collection.filter(function (match) { return name.toLowerCase() === match.toLowerCase(); });
 }
 
-function fuzzyMatch(collection, letter) {
-  return collection.filter(function (element) { return element.startsWith(letter)})
+function fuzzyMatch(collection, letters) {
+	return collection.filter(function (name) { return name.startsWith(letters) });
 }
 
 function matchName(collection, name) {
-  return collection.filter(function (element) { return element.name === name })
+	return collection.filter(function (object) { return object.name === name; });
 }
