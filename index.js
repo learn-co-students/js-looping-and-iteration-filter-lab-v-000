@@ -7,11 +7,32 @@ function findMatching (collection, driver) {
     });
 } 
     
-function fuzzyMatch (collection, driver)
+function fuzzyMatch (collection, driver) {
+    return collection.filter(function (driverName) {
+        return driverName.slice(0, 1) === driver.slice(0, 1); 
+    });
+}
 
-return drvName if the first two letters in the driver matchMedia
+// So fuzzyMatch filters the collection to see how the argument passed through the filter 
+// compares with the argument passed through fuzzyMatch (presumably referring to an existing declared object)
+//driverName is kind of a proxy for the driver
 
-if drvName.slice(0, 1)
+function matchName (collection, driver) {
+    return collection.filter(function (driverName) {
+        return driverName.name.toLowerCase() === driver.toLowerCase(); 
+    });
+}
+
+//ME The JS engine is telling matchName to return the collection with the specific name attribute that matches 
+// a string in the whole driver object??? 
+
+// function matchName (list, name) {
+//     return list.filter(function (driver) {
+//         return driver.name.toLowerCase() === name.toLowerCase();
+//     });
+// }
+
+
 
 
 // for (const char of 'Hello, world!') {

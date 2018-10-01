@@ -19,3 +19,6 @@ fullNameGreet (users, function (user) { return "Hello, " + user.firstName + " " 
 //   CHALLENGE: Review/code with looping and iteration sections then Iterate over collection and return a greeting for ALL names
 
 //   CHALLENGE: make a pure version
+
+
+// ME Note no need for for ... of iteration with #filter ()
