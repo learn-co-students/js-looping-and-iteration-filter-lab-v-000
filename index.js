@@ -22,38 +22,3 @@ function matchName (collection, driver) {
         return driverName.name.toLowerCase() === driver.toLowerCase(); 
     });
 }
-
-//ME The JS engine is telling matchName to return the collection with the specific name attribute that matches 
-// a string in the whole driver object??? 
-
-// function matchName (list, name) {
-//     return list.filter(function (driver) {
-//         return driver.name.toLowerCase() === name.toLowerCase();
-//     });
-// }
-
-
-
-
-// for (const char of 'Hello, world!') {
-//     console.log(char);
-// }
- 
-// // LOG: H
-// // LOG: e
-// // LOG: l
-// // LOG: l
-// // LOG: o
-// // LOG: ,
-// // LOG:
-// // LOG: w
-// // LOG: o
-// // LOG: r
-// // LOG: l
-// // LOG: d
-// // LOG: !
-
-// https://learn.co/tracks/full-stack-web-development-v6/javascript/looping-and-iteration/object-iteration
-
-
-
