@@ -12,3 +12,10 @@ function fuzzyMatch (array, text) {
   new_array = arr.filter(a => a.slice(0,2) === txt.slice(0,2));
   return new_array
 }
+
+function matchName (array, text) {
+  let arr = array;
+  let txt = text;
+  new_array = arr.filter(a => a.name === txt);
+  return new_array;
+}
