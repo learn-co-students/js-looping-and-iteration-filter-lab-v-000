@@ -3,17 +3,23 @@
 //     let newArr = theArray.filter(name => {if (name.toLowerCase() === theString.toLowerCase()) {return name;}});
 //     return newArr;
 // }
-function findMatching(arr, str) {
-    let newArr = arr.filter(function(name) { return str.toLowerCase() === name.toLowerCase();})
-    return newArr;
+function findMatching(arr, name) {
+    return arr.filter(function(arrName) { 
+        return arrName.toLowerCase() === name.toLowerCase();
+    });
 }
 
 function fuzzyMatch(arr, letters) {
-    let newArr = arr.filter(function(name) { return name.slice(0,2) === letters;})
-    return newArr;
+    let nameLength = letters.length;
+    return arr.filter(function(name) { 
+        return name.slice(0,nameLength) === letters;
+    });
 }
 
 function matchName(arr, str) {
-    let newArr = arr.filter(function(object) { for (const key in object) { return object[key] === str; }})
-    return newArr;
+    return arr.filter(function(object) { 
+        for (const key in object) {
+            return object[key].toLowerCase() === str.toLowerCase(); 
+        }
+    });
 }
