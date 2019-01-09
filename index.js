@@ -4,21 +4,20 @@ function findMatching(ar, name) {
   return ar.filter(function(el)
   {
     return el.toLowerCase()===name.toLowerCase();
-  }
-)
+  })
 }
 
-
-function fuzzyMatch(ar, name) {
+function fuzzyMatch(ar, partialName) {
+  let pNLength=partialName.length
   return ar.filter(function(el)
   {
-    return el.toLowerCase().charAt(0)===name.toLowerCase().charAt(0);
+    return el.slice(0, pNLength)===partialName;
   }
 )
 }
 
 function matchName(ar, name) {
   return ar.filter(function(el) {
-    return el.name===name;
+    return el.name.toLowerCase()===name.toLowerCase();
   })
 }
