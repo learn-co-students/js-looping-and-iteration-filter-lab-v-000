@@ -2,13 +2,13 @@
 
 function findMatching(drivers, str){
   return drivers.filter(function(el) {
-    return (el.toLowerCase() === str.toLowerCase());
+    return el.toLowerCase() === str.toLowerCase();
   });
 };
 
 function fuzzyMatch(drivers, str) {
   return drivers.filter(function(el) {
-    return el[0] == str[0];
+    return el[0] === str[0];
   });
 };
 
