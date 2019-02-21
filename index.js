@@ -1,5 +1,17 @@
 // Code your solution in this file
+function findMatching(collection, name) {
+  return collection.filter( function(person) { return person.toLowerCase() === name.toLowerCase() });
+}
 
+function fuzzyMatch(collection, letters) {
+  return collection.filter( function(name) { return letters === name.substring(0, letters.length) });
+}
+
+function matchName(collection, name) {
+  return collection.filter( function(user) { return user.name === name })
+}
+
+/*
 function findMatching(collection, name) {
   const newCollection = [];
 
@@ -33,3 +45,4 @@ function matchName(collection, name) {
   }
   return newCollection;
 }
+*/
