@@ -1,15 +1,15 @@
-// Code your solution in this file
 
-function findMatching(array, individualName) {
-return array.filter(function(name){return name.toUpperCase() === individualName.toUpperCase(); })
+function findMatching(array, matchName) {
+return array.filter(name => {return name.toUpperCase() === matchName.toUpperCase()})
+
 }
 
+function fuzzyMatch(array, string) {
+  return array.filter(name => {return name.charAt() === string.charAt()})
 
-function fuzzyMatch(array, individualName) {
-return array.filter(function(name){return name.charAt() === individualName.charAt(); })
 }
 
-function matchName(object, individualName) {
-  return object.filter(function(name){return name.name === individualName; })
+function matchName(object, matchName) {
+  return object.filter(key => {return key.name === matchName})
 
 }
