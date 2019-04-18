@@ -9,3 +9,4 @@ function fuzzyMatch(drivers, selection) {
 
 function matchName(drivers, who) {
   return drivers.filter(function(driver) {return driver.name === who });
+}
