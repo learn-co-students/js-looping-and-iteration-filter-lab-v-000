@@ -1,32 +1,30 @@
 // Code your solution in this file
 function findMatching(array, name) {
-  const newarray = []
-  for (const element in array) {
-    if (array[element] == name) {
-      newarray.push(name)
-    } else if (array[element] == name.toLowerCase()) {
-      newarray.push(name.toLowerCase())
+  const new_array = []
+  for (const element of array) {
+    if (element == name || element == name.toLowerCase()) {
+      new_array.push(element)
     }
   }
-  return newarray
+  return new_array
 }
 
-function fuzzyMatch(array, letters) {
-  const newarray = []
-  for (const element in array) {
-    if (array[element].substring(0, letters.length) == letters) {
-    newarray.push(array[element])
+function fuzzyMatch(array, input) {
+  const new_array = []
+  for (const element of array) {
+    if (element.substring(0,input.length) == input){
+      new_array.push(element)
     }
   }
-  return newarray
+  return new_array
 }
 
-function matchName(object, name) {
-  const newobject = []
-  for (const element in object) {
-    if (object[element].name == name) {
-      newobject.push(object[element])
+function matchName(object,name) {
+  const new_array = []
+  for (const key of object) {
+    if (key.name == name) {
+      new_array.push(key)
     }
   }
-  return newobject
+  return new_array
 }
