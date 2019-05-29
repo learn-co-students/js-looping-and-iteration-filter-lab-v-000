@@ -6,9 +6,16 @@ function findMatching(drivers, name) {
     return newDrivers;
 }
 
-function fuzzyMatch(drivers, index, name) {
+function fuzzyMatch(drivers, name) {
   let filteredDrivers = drivers.filter(function(driver) {
-    return driver.charAt(index) === name;
+    return driver.slice(0, name.length) === name;
    });
     return filteredDrivers;
+}
+
+function matchName(drivers, name) {
+  let newDrivers = drivers.filter(function(driver) {
+    return driver.name === name;
+   });
+    return newDrivers;
 }
