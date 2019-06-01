@@ -1,15 +1,18 @@
 // Code your solution in this file
-function findMatching(arr, string) {
-   
-   return arr.filter(function(string) {return arr.ignoreCase() === string.ignoreCase();});
+function findMatching(drivers, name) {
+   return drivers.filter(function(driver) {
+       return driver.toLowerCase() === name.toLowerCase()
+    });
 }
 
-function fuzzyMatch(arr, string) {
-    return arr.filter(function(el) {
-        return el.ignoreCase().indexOf(string.ignoreCase()) !== -1;
+function fuzzyMatch(drivers, letters) {
+    return drivers.filter(function(driver) {
+        return driver.startsWith(letters);
     })
   }
   
- function matchName(arr, string) {
-
+ function matchName(drivers, match) {
+    return drivers.filter(function(driver) {
+        return driver['name'] === match
+     });
  }
