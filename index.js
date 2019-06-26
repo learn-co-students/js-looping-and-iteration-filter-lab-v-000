@@ -1,14 +1,12 @@
 function findMatching(drivers, name) {
-  let foundDrivers = drivers.filter(function (driver) { return (name.toLowerCase() === driver.toLowerCase())});
-  return foundDrivers;
+  return drivers.filter(driver => name.toLowerCase() === driver.toLowerCase());
 }
 
 function fuzzyMatch(drivers, string) {
-  let foundDrivers = drivers.filter(function(driver) {return (driver.startsWith(string))});
-  return foundDrivers;
+  let regex = new RegExp('^' + string);
+  return drivers.filter(driver => driver.match(regex));
 }
 
-function matchName(drivers, string) {
-  let foundDrivers = drivers.filter(function (driver) { return (string === driver.name)});
-  return foundDrivers;
+function matchName(drivers, name) {
+  return drivers.filter(driver => name === driver.name);
 }
