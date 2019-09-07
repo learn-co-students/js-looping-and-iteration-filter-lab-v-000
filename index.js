@@ -1,6 +1,6 @@
 // Code your solution in this file
 function findMatching (drivers, name) {
-	return drivers.filter( function (userName) { return userName.toLowerCase().indexOf(name.toLowerCase()) !== -1; })
+	return drivers.filter( function (driver) { return driver.toLowerCase().indexOf(name.toLowerCase()) !== -1; })
 }
 
 function fuzzyMatch (drivers, char) {
