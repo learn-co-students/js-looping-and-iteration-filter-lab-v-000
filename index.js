@@ -1,23 +1,11 @@
-function findMatching(array, string) {
-  let result = [];
-  for (const e of array) {
-    let lowerCaseName = e.toLowerCase();
-    let lowerCaseString = string.toLowerCase();
-    if (lowerCaseName === lowerCaseString) {
-      result.push(e);
-    }
-  }
-  return result;
- }
+function findMatching(ary, str) {
+  return ary.filter(e => e.toLowerCase() === str.toLowerCase());
+}
 
- function fuzzyMatch(array, string) {
-  let re = new RegExp(string);
-  // let result = array.filter(function(name) {
-  //   return name.match(re);
-  // });
-  // return result;
- }
+function fuzzyMatch(ary, str) {
+  return ary.filter(e => e.substring(0, 2).match(str));
+}
 
- function matchName(array, string) {
+function matchName(array, string) {
 
- }
+}
