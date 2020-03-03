@@ -36,6 +36,7 @@
     "mocha-multi": "1.0.1"
   },
   "dependencies": {
+    "jshint": "^2.11.0",
     "sinon": "^7.2.5"
   }
 }
